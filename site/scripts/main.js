@@ -60,7 +60,8 @@ Site.on_load = function() {
 
 	//create dialog for youtube video
 	Site.video_dialog = new Dialog();
-		
+
+	//onclick function displaying video content
 	var button_youtube = $('a.youtube');
 	button_youtube.on('click', function(event){
 		event.preventDefault();
