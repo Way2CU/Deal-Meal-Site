@@ -6,6 +6,12 @@
 		data-id="$params['video_id']"
 		cms:eval="href,title,data-id"
 		>
+		<svg>
+			<use
+				href="#icon-play"
+				xlink:href="site/images/site-sprite.svg#icon-play"
+				/>
+		</svg>
 		<cms:text constant="title_video_button"/>
 	</a>	
 </document>
