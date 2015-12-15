@@ -58,7 +58,18 @@ Site.on_load = function() {
 		.setInterval(4000)
 		.setWrapAround(true);
 
-
+	//create dialog for youtube video
+	Site.video_dialog = new Dialog();
+		
+	var button_youtube = $('a.youtube');
+	button_youtube.on('click', function(event){
+		event.preventDefault();
+		var video_id = $(this).attr('data-id');
+		Site.video_dialog
+			.setSize(550)
+			.setContent($('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>'))
+			.show();
+	});
 };
 
 
