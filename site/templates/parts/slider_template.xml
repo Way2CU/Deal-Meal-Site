@@ -1,0 +1,7 @@
+<document>
+
+	<figure style="'background-image: url('.$params['image'].');'" cms:eval="style">
+		<cms:markdown param="description" multilanguage="yes"/>
+	</figure>
+
+</document>

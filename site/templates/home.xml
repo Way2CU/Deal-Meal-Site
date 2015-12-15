@@ -5,12 +5,35 @@
 	<html lang="$language" cms:eval="lang">
 		<head>
 			<title><cms:text constant="site_title"/></title>
-			<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
+			<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+			<cms:collection include="page_control"/>
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<cms:svg file="site-sprite.svg"/>
+
+			<header>
+				<div id="intro">
+					<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
+					<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+					<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
+
+					<p><cms:text constant="title_application"/></p>
+
+					<a href="#" class="google"></a>
+					<a href="#" class="app"></a>
+				</div>
+
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="header_slider"
+					template="parts/slider_template.xml"
+					/>
 			
+
+			</header>
 		</body>
 	</html>
 </document>
