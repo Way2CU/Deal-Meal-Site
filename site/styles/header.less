@@ -48,8 +48,16 @@ header div#intro a.app {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 236px 70px;
+	border: 2px solid transparent;
+	border-radius:10px;
 	width: 236px;
 	height: 70px;
+	transition: all 0.3s;
+}
+
+header div#intro a.google:hover,
+header div#intro a.app:hover {
+	border: 2px solid @color_ac_green;
 }
 
 header div#intro a.app {
