@@ -31,8 +31,6 @@
 					group="header_slider"
 					template="parts/slider_template.xml"
 					/>
-			
-
 			</header>
 		</body>
 	</html>
