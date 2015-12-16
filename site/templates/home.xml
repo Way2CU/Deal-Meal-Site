@@ -110,6 +110,17 @@
 			<section id="fixed_image">
 				<p><cms:text constant="title_fixed"/></p>
 			</section>
+
+			<section id="advertise">
+				<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
+
+				<p><cms:text constant="title_application"/></p>
+
+				<a href="#" class="google"></a>
+				<a href="#" class="app"></a>
+			</section>
 		</body>
 	</html>
 </document>

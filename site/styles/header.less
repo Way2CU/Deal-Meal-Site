@@ -6,12 +6,24 @@
  * Authors:Tal Reznic
  */
 
+section#advertise,
 header {
  	display: block;
  	padding: 0px calc(~'(100% - 1200px) / 2');
  	min-height: 700px;
  	position: relative;
  	overflow: hidden;
+}
+
+section#advertise {
+	padding: 50px calc(~'(100% - 500px) / 2');
+	text-align: center;
+	min-height: 0px;
+
+	background-image: url(../images/shatter.svg);
+	background-repeat: no-repeat;
+	background-position: center 50px;
+	background-size: 30% auto;
 }
 
 header div#intro {
@@ -21,6 +33,7 @@ header div#intro {
 	text-align: center;
 }
 
+section#advertise img,
 header div#intro img {
 	display: block;
 	margin-left: auto;
@@ -29,16 +42,24 @@ header div#intro img {
 	width: 45%;
 }
 
+section#advertise img.break,
 header div#intro img.break {
 	width: 100%;
 }
 
+section#advertise p,
 header div#intro p {
 	color: @color_ac_text;
 	font-weight: 700;
 	font-size: 2em;
 }
 
+section#advertise p {
+	color: black;
+}
+
+section#advertise a.google,
+section#advertise a.app,
 header div#intro a.google,
 header div#intro a.app {
 	display: inline-block;
@@ -55,15 +76,19 @@ header div#intro a.app {
 	transition: all 0.3s;
 }
 
+section#advertise a.google:hover,
+section#advertise a.app:hover,
 header div#intro a.google:hover,
 header div#intro a.app:hover {
 	border: 2px solid @color_ac_green;
 }
 
+section#advertise a.app,
 header div#intro a.app {
 	background-image: url(../images/appstore.svg);
 }
 
+section#advertise a.google,
 header div#intro a.google {
 	background-image: url(../images/googleplay.svg);
 }

@@ -23,13 +23,16 @@ section#video {
 }
 
 section#fixed_image {
+	display: block;
 	text-align: left;
-	padding: 250px calc(~'(100% - 800px) / 2');
+	padding: 0px calc(~'(100% - 800px) / 2');
 	background-image: url(../images/hand-phone.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-position: center center;
+	background-position: center top;
 	background-size: 1920px 700px;
+	min-height: 450px;
+	overflow: hidden;
 }
 
 section#fixed_image p {
@@ -41,6 +44,7 @@ section#fixed_image p {
 section#fixed_image p em {
 	display: block;
 	font-weight: 700;
+	text-shadow: -2px -2px 0px rgba(0, 0, 0, 0.7);
 }
 
 section#features {
