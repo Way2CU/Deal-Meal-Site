@@ -110,10 +110,15 @@ section#video a svg {
 	transition: all 0.3;
 }
 
+section#contact,
 section#clients {
 	display: block;
 	text-align: center;
 	padding: 50px calc(~'(100% - 1200px) / 2');
+}
+
+section#contact {
+	background-color: @color_ac_green;
 }
 
 section#clients div.images_container {
@@ -213,4 +218,102 @@ section#features ul li.stock.feature svg {
 	height: 100px;
 	fill: @color_ac_green;
 	transition: all 0.3s;
+}
+
+/*contact*/
+
+
+section#contact p {
+	font-size: 1.5em;
+	color: @color_ac_text;
+	font-weight: 700;
+}
+
+section#contact form {
+	display: block;
+}
+
+section#contact form label {
+	display: inline-block;
+	vertical-align: top;
+	padding-right: 40px;
+	position: relative;
+}
+
+section#contact form label:before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 2px;
+    background-image: url(../images/form-icons.svg);
+    background-repeat: no-repeat;
+    background-position: -120px 0px;
+    background-size: 200px 50px;
+    width: 50px;
+    height: 50px;
+}
+
+section#contact form label:nth-of-type(2):before {
+    background-position: -70px 0px;
+}
+
+section#contact form label:nth-of-type(3):before {
+    background-position: -20px 0px;
+}
+
+section#contact form label input {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid @color_ac_text;
+    background-color: transparent;
+    color: @color_ac_text;
+    width:calc(220px - 40px);
+    transition:all 0.3s;
+}
+
+section#contact form div.controls {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+}
+
+form div.controls button {
+	margin-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid @color_ac_text;
+    font-size: 1.3em;
+    line-height: 100%;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+}
+
+form div.controls button:hover {
+	background-color: @color_ac_text;
+	color: @color_ac_green;
+}
+
+::-webkit-input-placeholder {
+   color: @color_ac_text;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: @color_ac_text;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: @color_ac_text;  
+}
+
+:-ms-input-placeholder {  
+   color: @color_ac_text;  
 }

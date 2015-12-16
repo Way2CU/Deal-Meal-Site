@@ -114,12 +114,23 @@
 			<section id="advertise">
 				<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
 				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
-				<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
+				<img src="_BASEURL.'/site/images/breaking-green.svg'" class="break" cms:eval="src"/>
 
 				<p><cms:text constant="title_application"/></p>
 
 				<a href="#" class="google"></a>
 				<a href="#" class="app"></a>
+			</section>
+
+			<section id="contact">
+
+				<p><cms:text constant="title_contact"/></p>
+
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact"
+					/>
 			</section>
 		</body>
 	</html>
