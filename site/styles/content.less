@@ -31,5 +31,33 @@ section#video span {
 }
 
 section#video a {
-	
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+	line-height: 100%;
+	border: 1px solid @color_ac_text;
+	border-radius: 30px;
+	text-decoration: none;
+	color: @color_ac_text;
+	font-weight: 700;
+	font-size: 1.5em;
+	transition: all 0.3s;
+}
+
+section#video a:hover {
+	background-color: @color_ac_green;
+}
+
+section#video a svg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 5px;
+	fill: @color_ac_text;
+	width: 25px;
+	height: 25px;
+	transition: all 0.3;
 }
