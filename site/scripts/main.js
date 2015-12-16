@@ -70,7 +70,7 @@ Site.on_load = function() {
 			.setTitle(language_handler.getText(null, 'title_dialog_video'))
 			.setClearOnClose(true)
 			.setSize(550)
-			.setContent($('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>'))
+			.setContent($('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+video_id+'?autoplay=1" frameborder="0" allowfullscreen></iframe>'))
 			.show();
 	});
 
