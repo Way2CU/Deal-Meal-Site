@@ -12,9 +12,33 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:svg file="site-sprite.svg"/>
+			<!-- Desktop header -->
+			<cms:desktop>
+				<header>
+					<div id="intro">
+						<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
+						<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+						<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
 
-			<header>
-				<div id="intro">
+						<p><cms:text constant="title_application"/></p>
+
+						<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
+						<a href="#" class="app"></a>
+					</div>
+
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_slider"
+						template="parts/slider_template.xml"
+						/>
+						
+				</header>
+			</cms:desktop>
+
+			<!-- Mobile header -->
+			<cms:mobile>
+				<header>
 					<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
 					<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
 					<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
@@ -23,16 +47,17 @@
 
 					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 					<a href="#" class="app"></a>
-				</div>
-
+				</header>	
+			
+			<section id="mobile_slider">
 				<cms:module
 					name="gallery"
 					action="show_image_list"
-					group="header_slider"
+					group="mobile_header_slider"
 					template="parts/slider_template.xml"
 					/>
-					
-			</header>
+			</section>	
+			</cms:mobile>
 
 			<section id="video">
 
