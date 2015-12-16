@@ -106,6 +106,10 @@
 				</ul>
 
 			</section>
+
+			<section id="fixed_image">
+				<p><cms:text constant="title_fixed"/></p>
+			</section>
 		</body>
 	</html>
 </document>

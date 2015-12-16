@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#fixed_image,
 section#features,
 section#video {
 	display: block;
@@ -19,6 +20,27 @@ section#video {
 	min-height: 200px;
 
 	color: @color_ac_text;
+}
+
+section#fixed_image {
+	text-align: left;
+	padding: 250px calc(~'(100% - 800px) / 2');
+	background-image: url(../images/hand-phone.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: 1920px 700px;
+}
+
+section#fixed_image p {
+	font-size: 3em;
+	text-align: center;
+	display: inline-block;
+}
+
+section#fixed_image p em {
+	display: block;
+	font-weight: 700;
 }
 
 section#features {
@@ -41,7 +63,6 @@ section#video img {
 section#features img {
 	width: 15%;
 }
-
 
 section#features span,
 section#video span {
