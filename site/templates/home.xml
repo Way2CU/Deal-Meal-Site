@@ -83,6 +83,29 @@
 				</a>
 
 			</section>
+
+			<section id="features">
+
+				<h2><cms:text constant="title_features"/></h2>
+
+				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+
+				<span>
+					<cms:text constant="subtitle_features"/>
+				</span>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site/images/site-sprite.svg"/>
+					</cms:module>
+				</ul>
+
+			</section>
 		</body>
 	</html>
 </document>

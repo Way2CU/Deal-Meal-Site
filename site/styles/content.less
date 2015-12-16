@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#features,
 section#video {
 	display: block;
 	text-align: center;
@@ -20,14 +21,36 @@ section#video {
 	color: @color_ac_text;
 }
 
+section#features {
+	padding: 0px calc(~'(100% - 1000px) / 2');
+	background-image: none;
+	color: @color_text;
+}
+
+section#features h2 {
+	color: @color_ac_green;
+	font-size: 3em;
+}
+
+section#features img,
 section#video img {
 	width: 35%;
 	padding-left: 5px;
 }
 
+section#features img {
+	width: 15%;
+}
+
+
+section#features span,
 section#video span {
 	font-size: 1.5em;
 	font-weight: 700;
+}
+
+section#features span {
+	font-weight: 400;
 }
 
 section#video a {
@@ -92,7 +115,6 @@ section#clients div.images_container img.visible {
 	opacity: 1;
 }
 
-
 section#clients div.images_container img.transit {
 	transition: none;
 }
@@ -122,4 +144,48 @@ section#clients a.previous svg {
 section#clients a.next svg:hover,
 section#clients a.previous svg:hover {
 	fill: @color_ac_green;
+}
+
+/*features*/
+
+section#features ul{
+	margin: 0px;
+	margin-top: 50px;
+	list-style-type: none;
+}
+
+section#features ul li.stock.feature {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 40px;
+	width: 33.3%;
+	position: relative;
+}
+
+section#features ul li.stock.feature:hover figure {
+	background-color: @color_ac_green;
+}
+
+section#features ul li.stock.feature:hover svg {
+	fill: @color_ac_text;
+}
+
+section#features ul li.stock.feature figure {
+	display: inline-block;
+	margin: 0px;
+	padding: 30px;
+	border: 3px solid @color_ac_grey;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+section#features ul li.stock.feature h4 {
+	color: @color_ac_green;
+}
+
+section#features ul li.stock.feature svg {
+	width: 100px;
+	height: 100px;
+	fill: @color_ac_green;
+	transition: all 0.3s;
 }
