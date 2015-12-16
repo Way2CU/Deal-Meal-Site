@@ -21,7 +21,7 @@
 
 					<p><cms:text constant="title_application"/></p>
 
-					<a href="#" class="google"></a>
+					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 					<a href="#" class="app"></a>
 				</div>
 
@@ -118,7 +118,7 @@
 
 				<p><cms:text constant="title_application"/></p>
 
-				<a href="#" class="google"></a>
+				<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 				<a href="#" class="app"></a>
 			</section>
 
