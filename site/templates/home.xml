@@ -52,6 +52,37 @@
 					/>
 				
 			</section>
+
+			<section id="clients">
+
+				<a href="javascript:void(0)" class="previous">
+					<svg>
+						<use
+							href="#icon-play"
+							xlink:href="site/images/site-sprite.svg#icon-play"
+							/>
+					</svg>
+				</a>
+
+				<div class="images_container">
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="clients"
+						template="parts/client_images.xml"
+						/>
+				</div>	
+
+				<a href="javascript:void(0)" class="next">
+					<svg>
+						<use
+							href="#icon-play"
+							xlink:href="site/images/site-sprite.svg#icon-play"
+							/>
+					</svg>
+				</a>
+
+			</section>
 		</body>
 	</html>
 </document>

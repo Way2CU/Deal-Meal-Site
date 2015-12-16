@@ -71,6 +71,18 @@ Site.on_load = function() {
 			.setContent($('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>'))
 			.show();
 	});
+
+	// create slider for client logo gallery
+	 Site.client_logo_slider = new Caracal.Gallery.Slider();
+	 Site.client_logo_slider
+		.images.set_container('div.images_container')
+		.images.set_visible_count(4)
+		.images.set_step_size(1)
+		.images.set_center(true)
+		.images.add('div.images_container img')
+		.controls.attach_next('a.next')
+		.controls.attach_previous('a.previous');
+	 Site.client_logo_slider.images.update()
 };
 
 
