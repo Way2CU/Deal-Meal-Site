@@ -16,9 +16,9 @@
 			<cms:desktop>
 				<header>
 					<div id="intro">
-						<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
-						<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
-						<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
+						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
+						<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
+						<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
 
 						<p><cms:text constant="title_application"/></p>
 
@@ -39,9 +39,9 @@
 			<!-- Mobile header -->
 			<cms:mobile>
 				<header>
-					<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
-					<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
-					<img src="_BASEURL.'/site/images/breaking.svg'" class="break" cms:eval="src"/>
+					<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
+					<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
+					<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
 
 					<p><cms:text constant="title_application"/></p>
 
@@ -61,7 +61,7 @@
 
 			<section id="video">
 
-				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
 
 				<span>
 					<cms:text constant="title_video"/>
@@ -113,7 +113,7 @@
 
 				<h2><cms:text constant="title_features"/></h2>
 
-				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
 
 				<span>
 					<cms:text constant="subtitle_features"/>
@@ -137,9 +137,9 @@
 			</section>
 
 			<section id="advertise">
-				<img src="_BASEURL.'/site/images/logo.svg'" cms:eval="src" />
-				<img src="_BASEURL.'/site/images/logotype.svg'" cms:eval="src" />
-				<img src="_BASEURL.'/site/images/breaking-green.svg'" class="break" cms:eval="src"/>
+				<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
+				<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
 
 				<p><cms:text constant="title_application"/></p>
 
