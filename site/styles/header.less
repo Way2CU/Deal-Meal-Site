@@ -6,24 +6,17 @@
  * Authors:Tal Reznic
  */
 
-section#advertise,
+section#app_download,
 header {
  	display: block;
  	padding: 50px calc(~'(100% - 1200px) / 2');
- 	min-height: 600px;
  	position: relative;
  	overflow: hidden;
 }
 
-section#advertise {
+section#app_download {
 	padding: 50px calc(~'(100% - 500px) / 2');
 	text-align: center;
-	min-height: 0px;
-
-	background-image: url(../images/shatter.svg);
-	background-repeat: no-repeat;
-	background-position: center 50px;
-	background-size: 27% auto;
 }
 
 header div#intro {
@@ -32,7 +25,7 @@ header div#intro {
 	text-align: center;
 }
 
-section#advertise img,
+section#app_download img,
 header div#intro img {
 	display: block;
 	margin-left: auto;
@@ -41,24 +34,33 @@ header div#intro img {
 	width: 45%;
 }
 
-section#advertise img.break,
+section#app_download img.break,
 header div#intro img.break {
 	width: 100%;
 }
 
-section#advertise p,
+section#app_download img.shatter {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -282.5px;
+	width: 565px;
+	height: 462px;
+}
+
+section#app_download p,
 header div#intro p {
 	color: @color_ac_text;
 	font-weight: 700;
 	font-size: 2em;
 }
 
-section#advertise p {
+section#app_download p {
 	color: black;
 }
 
-section#advertise a.google,
-section#advertise a.app,
+section#app_download a.google,
+section#app_download a.app,
 header div#intro a.google,
 header div#intro a.app {
 	display: inline-block;
@@ -75,19 +77,19 @@ header div#intro a.app {
 	transition: all 0.3s;
 }
 
-section#advertise a.google:hover,
-section#advertise a.app:hover,
+section#app_download a.google:hover,
+section#app_download a.app:hover,
 header div#intro a.google:hover,
 header div#intro a.app:hover {
 	border: 2px solid @color_ac_green;
 }
 
-section#advertise a.app,
+section#app_download a.app,
 header div#intro a.app {
 	background-image: url(../images/appstore.svg);
 }
 
-section#advertise a.google,
+section#app_download a.google,
 header div#intro a.google {
 	background-image: url(../images/googleplay.svg);
 }

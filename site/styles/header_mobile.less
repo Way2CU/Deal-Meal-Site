@@ -6,6 +6,7 @@
  * Authors:Tal Reznic
  */
 
+section#app_download,
 header {
 	display: block;
 	text-align: center;
@@ -17,19 +18,38 @@ header {
 	position: relative;
 }
 
-header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    width: 30%
+section#app_download {
+	text-align: center;
+	padding-bottom: 10px;
+	min-height: 0px;
+	background-image: none;
 }
 
+section#app_download img,
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	width: 30%
+}
+
+section#app_download img.break,
 header img.break {
 	width: 70%;
 }
 
-section#advertise p,
+section#app_download img.shatter {
+	position: absolute;
+	padding-top: 0px;
+	top: 0px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+	height: 245px;
+}
+
+section#app_download p,
 header p {
 	color: black;
 	padding-top: 190px;
@@ -37,8 +57,12 @@ header p {
 	font-size: 1.3em;
 }
 
-section#advertise a.google,
-section#advertise a.app,
+section#app_download p {
+	padding-top: 0px;
+}
+
+section#app_download a.google,
+section#app_download a.app,
 header a.google,
 header a.app {
 	display: inline-block;
@@ -55,12 +79,12 @@ header a.app {
 	transition: all 0.3s;
 }
 
-section#advertise a.app,
+section#app_download a.app,
 header a.app {
 	background-image: url(../images/appstore.svg);
 }
 
-section#advertise a.google,
+section#app_download a.google,
 header a.google {
 	background-image: url(../images/googleplay.svg);
 }

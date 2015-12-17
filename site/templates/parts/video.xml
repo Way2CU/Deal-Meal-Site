@@ -1,17 +1,37 @@
 <document>
-	<a
-		class="youtube"
-		href="'http://www.youtube.com/watch?v='.$params['video_id']"
-		title="$params['title'][$language]"
-		data-id="$params['video_id']"
-		cms:eval="href,title,data-id"
-		>
-		<svg>
-			<use
-				href="#icon-play"
-				xlink:href="site/images/site-sprite.svg#icon-play"
-				/>
-		</svg>
-		<cms:text constant="title_video_button"/>
-	</a>	
+	<cms:desktop>
+		<a
+			class="youtube"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
+			title="$params['title'][$language]"
+			data-id="$params['video_id']"
+			cms:eval="href,title,data-id"
+			>
+			<svg>
+				<use
+					href="#icon-play"
+					xlink:href="site/images/site-sprite.svg#icon-play"
+					/>
+			</svg>
+			<cms:text constant="title_video_button"/>
+		</a>
+	</cms:desktop>
+
+	<cms:mobile>
+		<a
+			class="youtube_mobile"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
+			title="$params['title'][$language]"
+			data-id="$params['video_id']"
+			cms:eval="href,title,data-id"
+			>
+			<svg>
+				<use
+					href="#icon-play"
+					xlink:href="site/images/site-sprite.svg#icon-play"
+					/>
+			</svg>
+			<cms:text constant="title_video_button"/>
+		</a>
+	</cms:mobile>		
 </document>

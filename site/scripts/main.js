@@ -91,6 +91,10 @@ Site.on_load = function() {
 		.controls.attach_next('a.next')
 		.controls.attach_previous('a.previous');
 	 Site.client_logo_slider.images.update()
+
+	 if(Site.is_mobile()) {
+	 	Site.client_logo_slider.images.set_visible_count(2);
+	 }
 };
 
 

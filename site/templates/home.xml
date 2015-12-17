@@ -47,7 +47,8 @@
 
 					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 					<a href="#" class="app"></a>
-				</header>	
+				</header>
+
 			
 			<section id="mobile_slider">
 				<cms:module
@@ -57,8 +58,8 @@
 					template="parts/slider_template.xml"
 					/>
 			</section>	
-			</cms:mobile>
 
+			</cms:mobile>
 			<section id="video">
 
 				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
@@ -136,10 +137,11 @@
 				<p><cms:text constant="title_fixed"/></p>
 			</section>
 
-			<section id="advertise">
+			<section id="app_download">
 				<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
 				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
-				<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
+				<img src="_BASEURL.'/site/images/breaking-green.svg'" alt="breaking_text" class="break" cms:eval="src"/>
+				<img src="_BASEURL.'/site/images/shatter.svg'" alt="shatter" class="shatter" cms:eval="src" />
 
 				<p><cms:text constant="title_application"/></p>
 
