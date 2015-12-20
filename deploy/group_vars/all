@@ -1,10 +1,10 @@
 ---
 site:
-  domain: sample.com
+domain: deal-meal.com
   # subdomain: test
-  make_alias: false
+  make_alias: true
   root: httpdocs
-  username: sample
+  username: deal-meal
   caracal_branch: develop
   # ip_address: 0.0.0.0
   # owner: Some Person
