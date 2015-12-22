@@ -75,8 +75,8 @@ Site.on_load = function() {
 		Site.video_dialog
 			.setTitle(language_handler.getText(null, 'title_dialog_video'))
 			.setClearOnClose(true)
-			.setSize(550)
-			.setContent($('<iframe width="560" height="315" src="https://www.youtube.com/embed/'+video_id+'?autoplay=1" frameborder="0" allowfullscreen></iframe>'))
+			.setSize(800)
+			.setContent($('<iframe width="800" height="450" src="https://www.youtube.com/embed/'+video_id+'?autoplay=1" frameborder="0" allowfullscreen></iframe>'))
 			.show();
 	});
 
