@@ -88,6 +88,7 @@ Site.on_load = function() {
 		.images.set_step_size(1)
 		.images.set_center(true)
 		.images.add('div.images_container img')
+		.controls.set_auto(2000)
 		.controls.attach_next('a.next')
 		.controls.attach_previous('a.previous');
 	 Site.client_logo_slider.images.update()
