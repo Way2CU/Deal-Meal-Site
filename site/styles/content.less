@@ -29,7 +29,8 @@ section#fixed_image {
 	background-image: url(../images/hand-phone.jpg);
 	background-repeat: no-repeat;
 	background-position: center bottom;
-	background-size: 1920px 700px;
+	background-attachment: fixed;
+	background-size: cover;
 	min-height: 500px;
 	position: relative;
 }
@@ -289,23 +290,25 @@ section#contact form div.controls {
 	position: relative;
 }
 
+div.dialog div.command_bar a,
 form div.controls button {
 	margin-right: 20px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: transparent;
-    border: none;
-    border: 1px solid @color_ac_text;
-    font-size: 1.3em;
-    line-height: 100%;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 35px;
+	padding-right: 35px;
+	background-color: transparent;
+	border: none;
+	border: 1px solid @color_ac_text;
+	font-size: 1.3em;
+	line-height: 100%;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s;
 }
 
+div.dialog div.command_bar a:hover,
 form div.controls button:hover {
 	background-color: @color_ac_text;
 	color: @color_ac_green;
@@ -331,6 +334,12 @@ form div.controls button:hover {
 
 div.dialog div.title {
 	text-align: left;
+	background-color: @color_ac_green;
+}
+
+div.dialog div.content,
+div.dialog div.command_bar {
+	background-color: @color_ac_green;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
