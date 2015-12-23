@@ -6,33 +6,39 @@
  * Authors:Tal Reznic
  */
 
-  footer > div {
-  	background-color: black;
-  	text-align: center;
-  }
+footer {
+      background-color: black;
+      padding: 10px;
+      padding-bottom: 10px;
+}
 
-  /**
-   * Copyright
-   */
-  footer div.foxmed, 
-  footer div.copyright {
-  	display: inline-block;
-  	color: @color_ac_text;
-  	text-align: center;
-  }
+footer > div {
+	background-color: black;
+	text-align: center;
+}
 
- footer div.foxmed a,
- footer div.copyright a {
-  	color: white;
-  }
+/**
+ * Copyright
+ */
+footer div.foxmed, 
+footer div.copyright {
+	display: inline-block;
+	color: @color_ac_text;
+	text-align: center;
+}
 
-  footer div.foxmed a {
-  	display: inline-block;
-  	vertical-align: middle;
-  	background-image: url(../images/foxmed_logo.png);
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-size: 100% auto;
-  	width: 150px;
-  	height: 50px;
-  } 
+footer div.foxmed a,
+footer div.copyright a {
+	color: white;
+}
+
+footer div.foxmed a {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../images/foxmed_logo.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
+	width: 150px;
+	height: 50px;
+} 
