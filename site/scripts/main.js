@@ -59,7 +59,7 @@ Site.on_load = function() {
 		.setWrapAround(true);
 
 	//create mobile images slider
-	Site.mobile_images_slider = new PageControl('section#mobile_slider', 'figure');
+	Site.mobile_images_slider = new PageControl('header', 'figure');
 	Site.mobile_images_slider
 		.setInterval(4000)
 		.setWrapAround(true);	
