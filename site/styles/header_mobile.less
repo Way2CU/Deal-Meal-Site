@@ -15,9 +15,9 @@ header {
 }
 
 header{
+	padding-top: 140px;
 	min-height: 453px;
-	background: linear-gradient(to bottom, rgba(100,48,0,0.37) 0%,rgba(100,48,0,1) 100%);
-
+	background-color: black;
 }
 
 section#app_download {
@@ -38,6 +38,10 @@ header div#intro {
 }
 
 header div#intro {
+	color: @color_ac_text;
+}
+
+header div#intro p{
 	color: @color_ac_text;
 }
 
@@ -84,6 +88,7 @@ header a.app {
 	vertical-align: top;
 	margin-left: 5px;
 	margin-right: 5px;
+	margin-bottom: 10px;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 155px 40px;
@@ -92,6 +97,11 @@ header a.app {
 	width: 155px;
 	height: 40px;
 	transition: all 0.3s;
+}
+
+header a.google,
+header a.app {
+	border: 2px solid @color_ac_green;
 }
 
 section#app_download a.app,
