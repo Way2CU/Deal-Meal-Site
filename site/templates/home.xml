@@ -12,33 +12,9 @@
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
 			<cms:svg file="site-sprite.svg"/>
-			<!-- Desktop header -->
-			<cms:desktop>
-				<header>
-					<div id="intro">
-						<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
-						<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
-						<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
 
-						<p><cms:text constant="title_application"/></p>
-
-						<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
-						<a href="#" class="app"></a>
-					</div>
-
-					<cms:module
-						name="gallery"
-						action="show_image_list"
-						group="header_slider"
-						template="parts/slider_template.xml"
-						/>
-						
-				</header>
-			</cms:desktop>
-
-			<!-- Mobile header -->
-			<cms:mobile>
-				<header>
+			<header>
+				<div id="intro">
 					<img src="_BASEURL.'/site/images/logo.svg'" alt="logo" cms:eval="src" />
 					<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
 					<img src="_BASEURL.'/site/images/breaking.svg'" alt="breaking_text" class="break" cms:eval="src"/>
@@ -47,19 +23,28 @@
 
 					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 					<a href="#" class="app"></a>
-				</header>
+				</div>
+				
+				<cms:desktop>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="header_slider"
+						template="parts/slider_template.xml"
+						/>
+				</cms:desktop>
 
-			
-			<section id="mobile_slider">
-				<cms:module
-					name="gallery"
-					action="show_image_list"
-					group="mobile_header_slider"
-					template="parts/slider_template.xml"
-					/>
-			</section>	
+				<cms:mobile>
+					<cms:module
+						name="gallery"
+						action="show_image_list"
+						group="mobile_header_slider"
+						template="parts/slider_template.xml"
+						/>
+				</cms:mobile>
+					
+			</header>
 
-			</cms:mobile>
 			<section id="video">
 
 				<img src="_BASEURL.'/site/images/logotype.svg'" alt="logo_text" cms:eval="src" />
