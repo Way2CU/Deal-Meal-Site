@@ -84,13 +84,11 @@ Site.on_load = function() {
 	 Site.client_logo_slider = new Caracal.Gallery.Slider();
 	 Site.client_logo_slider
 		.images.set_container('div.images_container')
-		.images.set_visible_count(4)
+		.images.set_visible_count(6)
 		.images.set_step_size(1)
 		.images.set_center(true)
 		.images.add('div.images_container img')
-		.controls.set_auto(2000)
-		.controls.attach_next('a.next')
-		.controls.attach_previous('a.previous');
+		.controls.set_auto(800);
 	 Site.client_logo_slider.images.update()
 
 	 if(Site.is_mobile()) {
