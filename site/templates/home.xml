@@ -22,7 +22,7 @@
 					<p><cms:text constant="title_application"/></p>
 
 					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
-					<a href="#" class="app"></a>
+					<a href="(Language::getText('appstore_link'))" class="app" cms:eval="href"></a>
 				</div>
 				
 				<cms:desktop>
@@ -113,7 +113,7 @@
 				<p><cms:text constant="title_application"/></p>
 
 				<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
-				<a href="#" class="app"></a>
+				<a href="(Language::getText('appstore_link'))" class="app" cms:eval="href"></a>
 			</section>
 
 			<section id="contact">
