@@ -71,12 +71,11 @@ Site.on_load = function() {
 	var button_youtube = $('a.youtube');
 	button_youtube.on('click', function(event){
 		event.preventDefault();
-		var video_id = $(this).attr('data-id');
 		Site.video_dialog
 			.setTitle(language_handler.getText(null, 'title_dialog_video'))
 			.setClearOnClose(true)
 			.setSize(800)
-			.setContent($('<iframe width="800" height="450" src="https://www.youtube.com/embed/'+video_id+'?autoplay=1" frameborder="0" allowfullscreen></iframe>'))
+			.setContent($('<iframe src="https://player.vimeo.com/video/157012342?autoplay=1&title=0&byline=0&portrait=0" width="800" height="450" frameborder="0" ></iframe>'))
 			.show();
 	});
 
