@@ -54,13 +54,8 @@
 				</span>
 
 				<br/>
-
-				<cms:module
-					name="youtube"
-					action="show"
-					text_id="deal_meal_video"
-					template="parts/video.xml"	
-					/>
+				
+				<cms:template file="parts/video.xml"/>	
 				
 			</section>
 
