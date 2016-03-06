@@ -2,8 +2,9 @@
 	<cms:desktop>
 		<a
 			class="youtube"
-			href="https://vimeo.com/157012342"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
 			title="$params['title'][$language]"
+			data-id="$params['video_id']"
 			cms:eval="href,title,data-id"
 			>
 			<svg>
@@ -19,8 +20,9 @@
 	<cms:mobile>
 		<a
 			class="youtube_mobile"
-			href="https://vimeo.com/157012342"
+			href="'http://www.youtube.com/watch?v='.$params['video_id']"
 			title="$params['title'][$language]"
+			data-id="$params['video_id']"
 			cms:eval="href,title,data-id"
 			>
 			<svg>
