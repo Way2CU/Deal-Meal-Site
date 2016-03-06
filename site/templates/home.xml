@@ -55,7 +55,12 @@
 
 				<br/>
 				
-				<cms:template file="parts/video.xml"/>	
+				<cms:module
+					name="youtube"
+					action="show"
+					text_id="deal_meal_video"
+					template="parts/video.xml"	
+					/>	
 				
 			</section>
 
