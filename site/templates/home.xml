@@ -23,6 +23,7 @@
 
 					<a href="(Language::getText('google_link'))" class="google" cms:eval="href"></a>
 					<a href="(Language::getText('appstore_link'))" class="app" cms:eval="href"></a>
+					<p><cms:text constant="title_availability"/></p>
 				</div>
 				
 				<cms:desktop>
